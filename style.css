@@ -1,0 +1,425 @@
+* {
+    font-family: 'Gaegu', cursive;
+    list-style: none;
+}
+
+ul {
+    /* 왼쪽 페딩 제거 */
+    padding-left: 0px;
+}
+
+a {
+    /* 하이퍼링크 밑줄 지우기 */
+    text-decoration: none;
+}
+
+#not-provided {
+    /* visibility hidden은 공간 차지를 함 display none은 안함*/
+    display: none;
+}
+/* 반응형 웹, 576 이하면~ */
+@media (max-width : 576px) {
+    /* important는 우선순위 제일 위 */
+    header,
+    main,
+    article,
+    footer{
+        display:none !important;
+    }
+    /* block하면 다시 보임 */
+    #not-provided{
+        display: block;
+    }
+}
+/* header */
+header > nav > .icon-container {
+    margin-left: 24rem;
+}
+
+header > ul {
+    font-size: 1.4rem;
+}
+
+body > header > nav > div {
+    font-size: 2rem;
+}
+
+header > nav > .navbar-nav {
+    margin-right : 24rem;
+}
+
+@media (max-width: 991px) {
+    header > nav > .icon-container {
+        margin-left: 3rem;
+    }
+    
+    header > nav > .navbar-nav {
+        margin-right : 3rem;
+    }
+}
+
+body > header > .navbar {
+    background-color: rgb(255, 239, 218);
+}
+
+#frontpage {
+    display: flex;
+    background-color: rgb(255, 249, 241);
+    height: 100vh;
+    /* padding-top: 5rem; */
+    /* padding-bottom: 5rem; */
+}
+
+#frontpage > .title-container > h2 {
+    color: orangered;
+}
+
+#frontpage > .title-container > h3 {
+    color: coral;
+}
+
+/* copy -> selector하면 경로 쉽게 찾을 수 있음 */
+.btn {
+    background-color: gold;
+    font-weight: bold;
+}
+
+h2, h3, header {
+    font-weight: bold;
+}
+
+#fronpage > .title-container {
+    flex: 1
+}
+
+.frontpage-img-container {
+    flex: 3;
+    background-image : linear-gradient(to left, transparent,rgb(255, 249, 241)), url(img/labtop.jpg);
+    background-size: cover;
+}
+
+#frontpage > nav {
+    margin-top: 300px;
+    margin-left: 5px;
+    display: flex;
+    width: 70px;
+    justify-content: center;
+    align-content: center;
+}
+
+#fromtpage > nav > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+}
+
+#frontpage > nav > li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#frontpage > nav .github-icon {
+    height: 2.8rem;
+}
+
+#frontpage > nav .solved-icon{
+    height: 2.8rem;
+}
+
+@media (max-width:991px) {
+    #frontpage > nav li {
+        display: none;
+    }
+    
+    #frontpage > .title-container{
+        padding-left: 8rem;
+        padding-top: 8rem;
+    }
+
+    #frontpage h2 {
+        font-size: 1.8rem;
+    }
+
+    #forntpage h3 {
+        font-size: 1.5rem;
+    }
+
+    #frontpage ul{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .frontpage-img-container {
+        display: none;
+    }
+}
+
+#my-intro {
+    background-color: rgb(255, 249, 241);
+    display: flex;
+    align-items: center;
+}
+#my-intro > .info-text-container{
+    padding-left: 50px;
+}
+#my-intro > .my-intro-layout-parent{
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+#my-intro .profile-img-container {
+    display: flex;
+    margin-top: 5.5rem;
+    margin-left: 1rem;
+    flex: 1;
+    justify-content: center;
+}
+
+#my-intro .info-text-container {
+    flex: 2;
+    padding-left: 1rem;
+}
+
+#my-intro .info-text-container .top-text {
+    margin-bottom: 40px;
+}
+
+#my-intro .profile-img{
+    background-image: url(img/profile.jpg);
+    height: 36rem;
+    width: 24rem;
+    background-size: cover;
+}
+
+footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(255, 249, 241);
+    font-size: 2rem;
+}
+
+@media (max-width : 768px) {
+    footer {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+    }
+}
+
+#frontpage > nav {
+    margin-right: 50px;
+}
+
+#my-intro > div > section.info-text-container{
+    padding-top: 5rem;
+}
+
+#my-intro > div > section.info-text-container > h2:nth-child(1){
+    color: coral;
+}
+
+#my-intro > div > section.info-text-container span, h2 {
+    color: coral;
+}
+#frontpage > section.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+#my-intro .my-interests-container > h2 {
+    margin-bottom: 20px;
+}
+
+#my-intro > div > section.info-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#my-intro > div > section.info-text-container > ul > li {
+    display: flex;
+
+}
+
+#my-intro > div > section.info-text-container > ul > li > div.icon-container {
+    flex : 2
+}
+
+#my-intro > div > section.info-text-container > ul > li > div.column-name {
+    flex : 4
+}
+
+#my-intro > div > section.info-text-container > ul > li > div.column-data {
+    flex : 6
+}
+
+@media (max-width : 782px) {
+    #my-intro > .my-intro-layout-parent {
+        flex-direction: column;
+    } 
+}
+
+#skills {
+    background-color: rgb(255, 249, 241);
+}
+
+#skills > ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+}
+
+#skills > h2 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: gold;
+}
+
+#skills > ul > li > div > div {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#skills .card {
+    width: 20rem;
+    height: 25rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+#skills > ul > li > div > ul > li > img {
+    height: 5rem;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+#project > h2 {
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 30px;
+}
+
+#project > .edu-project-container{
+    display: flex;
+}
+
+#project > div > div.edu-container {
+    flex : 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#project > div > div.project-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media (max-width : 992px) {
+    #project > .edu-project-container {
+        flex-direction: column;
+    }
+}
+
+#project .edu-project-container h3 {
+    display: flex;
+    align-items: center;
+}
+
+#project > div > div.edu-container > ul > div > div {
+    color: orange;
+}
+
+#project > div > div.project-container > ul > div > div {
+    color: orange;
+}
+
+#project {
+    background-color: rgb(255, 249, 241);
+}
+
+.edu-container-in {
+    border-left : 4px solid coral;
+    margin-bottom: 2rem;
+}
+
+#contact {
+    padding-bottom: 80px;
+}
+
+#contact h2, h3 {
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+}
+
+#contact h3 {
+    font-size: 3rem;
+}
+
+#contact h3 {
+    font-size: 3rem;
+    margin-bottom: 80px;
+}
+
+#contact .contact-container {
+    display: flex;
+}
+
+#contact .input-container {
+    flex:2;
+}
+
+#contact .name-email-container,
+#contact .title-container,
+#contact .content-container {
+    margin-bottom: 40px;
+}
+
+#contact .name-email-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact > .contact-container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#contact > div > div.contact-info-container {
+    margin-left: 80px;
+}
+
+.name-email-container .name-1,
+.name-email-container .name-2 {
+    flex: 1;
+}
+
+.name-email-container .name-2 {
+    margin-left: 2rem;
+}
+
+#contact {
+    background-color: rgb(255, 249, 241);
+}
+
+#project > div {
+    margin-left: 100px;
+    margin-right: 100px;
+}

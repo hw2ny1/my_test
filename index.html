@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>abcde</title>
+
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid icon-container">
+              <a class="navbar-brand" href="#frontpage"><span class="material-symbols-outlined">
+                home
+                </span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#frontpage">Main</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#my-intro">Intro</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#project">Project</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#contack">Contack</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main id="frontpage">
+        <nav>
+            <ul>
+                <li><a href="https://github.com/hw2ny1"><img class="github-icon" src="img/github-mark.svg" alt="Github"></a></li>
+                <li><a href="https://solved.ac/profile/hw2ny1"><img class="solved-icon" src="img/back.png" alt="Backjun"></a></li>
+            </ul>
+        </nav>
+
+        <section class="title-container">
+            <div>
+                <h2>Hello World!</h2>
+                <h3>개발자 신성환</h3>
+                <ul>
+                    <li><span>2023.1 삼성 청년 소프트웨어 아카데미 (SSAFY) 9기</span></li>
+                    <li><span>2022.9 부산과학체험관 도슨트</span></li>
+                    <li><span>2022.8 부경대학교 물리학과 졸업</span></li>
+                    <li><span>2021.5 제16전투비행단 화생방지원대 탐측사</span></li>
+                </ul>
+                <a href="#contack">
+                    <button type="button" class="btn">이메일 보내기</button>
+                </a>
+            </div>
+        </section>
+        <section class="frontpage-img-container">
+        </section>
+    </main>
+    <article id="my-intro">
+        <div class="my-intro-layout-parent">
+            <section class="profile-img-container">
+                <div class="profile-img"></div>
+            </section>
+            <section class="info-text-container">
+                <h2>My Intro</h2>
+                <h2>About Me</h2>
+                <p>고등학교 1학년 때 JAVA를 독학한 후, 대학교에 입학하여 Python, C/C++ 등을 공부하였습니다. 전산물리학 수업을 통해 가위바위보AI를 제작해 보았으며, 고급물리학 실험수업에서 라즈베리파이와 아두이노를 이용한 IoT수업을 하였습니다. 졸업후, 삼성 청년 소프트웨어 아카데미 9기에 입교한 후, 대학교에서 부족했던 팀프로젝트 경험을 쌓고 있습니다.</p>
+                <ul class="contack-info-ul">
+                    <li class="col">
+                        <div class="icon-container">
+                            <span class="material-symbols-outlined">
+                                account_circle
+                                </span>
+                        </div>
+                        <div class="column-name">Name.</div>
+                        <div class="column-data">신성환</div>
+                    </li>
+                    <li class="col">
+                        <div class="icon-container">
+                            <span class="material-symbols-outlined">
+                                contact_mail
+                                </span>
+                        </div>
+                        <div class="column-name">Email.</div>
+                        <div class="column-data">hw2ny1@nnnnn.com.</div>
+                    </li>
+                    <li class="col">
+                        <div class="icon-container">
+                            <span class="material-symbols-outlined">
+                                smartphone
+                                </span>
+                        </div>
+                        <div class="column-name">Phone.</div>
+                        <div class="column-data">010-1234-5678</div>
+                    </li>
+                </ul>
+                <div class="my-inerests-container">
+                    <h2>My Interest</h2>
+                    <ul>
+                        <li>
+                            <span class="material-symbols-outlined">
+                                headphones
+                                </span>
+                            Music
+                            <span class="material-symbols-outlined">
+                                surgical
+                                </span>
+                            Making
+                            <span class="material-symbols-outlined">
+                                airplane_ticket
+                                </span>
+                            Travel
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </article>
+    <article id="skills">
+        <h2>SKILLS</h2>
+        <ul>
+            <li>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                      Frontend
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li><img src="./img/skills-icon/html_css_js.png" alt=""></li>
+                      <li><img src="./img/skills-icon/vuejs.png" alt=""></li>
+                    </ul>
+                  </div>
+            </li>
+            <li>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                      Backend
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li><img src="./img/skills-icon/django.png" alt=""></li>
+                    </ul>
+                  </div>
+            </li>
+            <li>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                      Database
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li><img src="./img/skills-icon/sqlite.png" alt=""></li>
+                      <li><img src="./img/skills-icon/mysql.png" alt=""></li>
+                    </ul>
+                  </div>
+            </li>
+            <li>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                      Database
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li><img src="./img/skills-icon/linux.png" alt=""></li>
+                        <li><img src="./img/skills-icon/git.png" alt=""></li>
+                    </ul>
+                  </div>
+            </li>
+        </ul>
+    </article>
+    <article id="project">
+        <h2>Education& project</h2>
+        <div class="edu-project-container">
+            <div class="edu-container">
+                <h3>
+                    <span class="material-symbols-outlined">
+                        school
+                        </span>
+                    <span>Education</span>
+                </h3>
+                <ul>
+                    <li>
+                        <div class="edu-container-in">
+                            <div><h2>dd</h2></div>
+                            <div><h6>dd</h6></div>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                calendar_month
+                                </span>
+                                <span class="date-data">12</span>
+                            </div>
+                        </div>
+                        <div class="edu-container-in">
+                            <div><h2>dd</h2></div>
+                            <div><h6>dd</h6></div>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                calendar_month
+                                </span>
+                                <span class="date-data">12</span>
+                            </div>
+                        </div>
+                        <div class="edu-container-in">
+                            <div><h2>dd</h2></div>
+                            <div><h6>dd</h6></div>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                calendar_month
+                                </span>
+                                <span class="date-data">12</span>
+                            </div>
+                        </div>
+                        <div class="edu-container-in">
+                            <div><h2>dd</h2></div>
+                            <div><h6>dd</h6></div>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                calendar_month
+                                </span>
+                                <span class="date-data">12</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="project-container">
+                <h3>
+                    <span class="material-symbols-outlined">
+                        menu_book
+                        </span>
+                    <span>project</span>
+                </h3>
+                <ul>
+                    <li>
+                        <div class="edu-container-in">
+                            <div><h2>dd</h2></div>
+                            <div><h6>dd</h6></div>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                calendar_month
+                                </span>
+                                <span class="date-data">12</span>
+                            </div>
+                        </div>
+                        <div class="edu-container-in">
+                            <div><h2>dd</h2></div>
+                            <div><h6>dd</h6></div>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                calendar_month
+                                </span>
+                                <span class="date-data">12</span>
+                            </div>
+                        </div>
+                        <div class="edu-container-in">
+                            <div><h2>dd</h2></div>
+                            <div><h6>dd</h6></div>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                calendar_month
+                                </span>
+                                <span class="date-data">12</span>
+                            </div>
+                        </div>
+                        <div class="edu-container-in">
+                            <div><h2>dd</h2></div>
+                            <div><h6>dd</h6></div>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                calendar_month
+                                </span>
+                                <span class="date-data">12</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </article>
+    <article id="contact">
+        <h2>Contack Me</h2>
+        <h3>문의사항</h3>
+
+        <div class="contact-container">
+            <div class="input-container">
+                <div class="name-email-container">
+                    <div class="name-1">
+                        <input type="text" id="contack-input-name"  class="form-control" placeholder="name">
+                        <label for="contakc-input-name"></label>
+                    </div>
+                    <div class="name-2">
+                        <input type="text" id="contack-input-title" class="form-control" placeholder="Email">
+                        <label for="contakc-input-title"></label>
+                    </div>
+                </div>
+                
+                <div class="title-container">
+                    <input type="text" id="contack-input-title" class="form-control" placeholder="title">
+                    <label for="contakc-input-title"></label>
+                </div>
+                <div class="title-container">
+                    <div class="input-group">
+                        <textarea class="form-control" aria-label="With textarea"  placeholder="content"></textarea>
+                    </div>
+                </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary form-control" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Send
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        이거 왜 하는거야
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-info-container">
+                <div class="phone-container">
+                    <div class="icon-container">
+                      <span class="material-symbols-outlined">
+                        call
+                      </span>
+                    </div>
+                    <div class="kategorie">
+                      <div class="kategori-name">Call Me</div>
+                      <div class="content">010-1234-5678</div>
+                    </div>
+                </div>
+                <div class="phone-container">
+                    <div class="icon-container">
+                        <span class="material-symbols-outlined">
+                            mail
+                            </span>
+                    </div>
+                    <div class="kategorie">
+                      <div class="kategori-name">Email</div>
+                      <div class="content">hw2ny@nnnnn.com</div>
+                    </div>
+                </div>
+                <div class="phone-container">
+                    <div class="icon-container">
+                        <span class="material-symbols-outlined">
+                            map
+                        </span>
+                    </div>
+                    <div class="kategorie">
+                      <div class="kategori-name">Adress</div>
+                      <div class="content">으아아아아아</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer>
+        <div>&copy; 2023. Shin Seong Hwan. All right reserved.</div>
+    </footer>
+
+    <h1 id="not-provided">
+        이 사이트는 너비 576px 사이즈 미만의 화면에서 제공되지 않습니다.
+    </h1>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
